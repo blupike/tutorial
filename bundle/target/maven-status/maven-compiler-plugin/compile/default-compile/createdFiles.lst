@@ -1,0 +1,8 @@
+org\apache\servicemix\samples\wsdl_first\types\UnknownPersonFault.class
+org\apache\servicemix\samples\wsdl_first\types\GetPersonResponse.class
+org\apache\servicemix\samples\wsdl_first\UnknownPersonFault.class
+org\apache\servicemix\samples\wsdl_first\types\GetPerson.class
+org\apache\servicemix\samples\wsdl_first\Person.class
+org\apache\servicemix\samples\wsdl_first\PersonService.class
+org\apache\servicemix\samples\wsdl_first\types\package-info.class
+org\apache\servicemix\samples\wsdl_first\types\ObjectFactory.class
