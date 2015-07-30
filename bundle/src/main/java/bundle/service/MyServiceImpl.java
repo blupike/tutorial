@@ -3,7 +3,7 @@ package bundle.service;
 
 public class MyServiceImpl implements MyServiceI{
 	
-	public MyServiceImpl() {
+	public MyServiceImpl() { 
 		super();
 	}
 
