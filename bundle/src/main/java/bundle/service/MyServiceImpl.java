@@ -4,7 +4,7 @@ package bundle.service;
 public class MyServiceImpl implements MyServiceI{
 	
 	public MyServiceImpl() { 
-		super();
+		super(); 
 	}
 
 	public void work() {
