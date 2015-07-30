@@ -4,5 +4,5 @@ public interface MyServiceI {
 
 	public void work();
 	public void init();   
-	
+	    
 }

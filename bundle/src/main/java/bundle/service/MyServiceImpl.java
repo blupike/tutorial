@@ -9,7 +9,7 @@ public class MyServiceImpl implements MyServiceI{
   
 	public void work() {
 		System.out.println("It works ! ! !");
-	}
+	}  
 	
 	public void init() {
 		System.out.println("Init ! ! !");
