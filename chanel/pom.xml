@@ -134,10 +134,12 @@
                         </Private-Package>
                         <Require-Bundle>org.apache.cxf.bundle</Require-Bundle>
                         
+                        <!-- 
                         <Import-Package>
 							bundle.service
 						</Import-Package>
-                        
+                         -->
+                         
                         <!--
                         <DynamicImport-Package>*</DynamicImport-Package>
                         -->

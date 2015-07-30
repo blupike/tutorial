@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1438262050304
+Build-Jdk: 1.7.0_79
+Built-By: giordano.mancini
+Bundle-ManifestVersion: 2
+Bundle-Name: A CXF WSDL First OSGi Project-Channel
+Bundle-SymbolicName: channel
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: camel_cxf.adapter;version="0.0.1";uses:="javax.jws,javax
+ .xml.ws,org.apache.servicemix.samples.wsdl_first",org.apache.servicemix
+ .samples.wsdl_first;version="0.0.1";uses:="javax.jws,javax.xml.bind.ann
+ otation,javax.xml.namespace,javax.xml.ws,org.apache.servicemix.samples.
+ wsdl_first.types",org.apache.servicemix.samples.wsdl_first.types;versio
+ n="0.0.1";uses:="javax.xml.bind.annotation",rest;version="0.0.1";uses:=
+ "javax.ws.rs"
+Import-Package: bundle.service,com.fasterxml.jackson.jaxrs.json;version=
+ "[2.0,3)",javax.jws;version="[2.0,3)",javax.ws.rs;version="[2.0,3)",jav
+ ax.xml.bind.annotation,javax.xml.namespace,javax.xml.ws;version="[2.1,3
+ )"
+Require-Bundle: org.apache.cxf.bundle
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Tool: Bnd-2.4.1.201501161923

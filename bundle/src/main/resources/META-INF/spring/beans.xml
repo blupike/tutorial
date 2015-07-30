@@ -43,8 +43,8 @@ http://cxf.apache.org/jaxrs
 
 <!-- File tutto commentato. Esporre solo servizi OSGi (java-to-java) -->
 
-<osgi:service id="simpleServiceOsgi" ref="simpleService" interface="service.MyServiceI" />
-<bean id="simpleService" class="service.MyServiceImpl" init-method="init"/>
+<osgi:service id="simpleServiceOsgi" ref="simpleService" interface="bundle.service.MyServiceI" />
+<bean id="simpleService" class="bundle.service.MyServiceImpl" init-method="init"/>
 
 <!-- 
     <import resource="classpath:META-INF/cxf/cxf.xml" />
