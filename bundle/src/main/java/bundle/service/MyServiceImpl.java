@@ -7,7 +7,7 @@ public class MyServiceImpl implements MyServiceI{
 		super(); 
 	}
   
-	public void work() {  
+	public void work() {        
 		System.out.println("It works ! ! !");
 	}  
 	
