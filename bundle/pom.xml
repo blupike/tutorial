@@ -25,8 +25,8 @@
     <groupId>camel-cxf</groupId>
     <artifactId>bundle</artifactId>
     <packaging>bundle</packaging>
-    <version>0.0.2-SNAPSHOT</version>
-    <name>A CXF WSDL First OSGi Project-Adapter 3</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>A CXF WSDL First OSGi Project-Bundle</name>
     <url>http://www.myorganization.org</url>
     
     <properties>

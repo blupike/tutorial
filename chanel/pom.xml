@@ -23,7 +23,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>camel-cxf</groupId>
-    <artifactId>adapter</artifactId>
+    <artifactId>channel</artifactId>
     <packaging>bundle</packaging>
     <version>0.0.2-SNAPSHOT</version>
     <name>A CXF WSDL First OSGi Project-Channel</name>
