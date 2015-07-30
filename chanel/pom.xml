@@ -19,14 +19,14 @@
         See the License for the specific language governing permissions and
         limitations under the License.
     -->
-
+ 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>camel-cxf</groupId>
     <artifactId>adapter</artifactId>
     <packaging>bundle</packaging>
     <version>0.0.2-SNAPSHOT</version>
-    <name>A CXF WSDL First OSGi Project-Adapter 3</name>
+    <name>A CXF WSDL First OSGi Project-Channel</name>
     <url>http://www.myorganization.org</url>
     
     <properties>
