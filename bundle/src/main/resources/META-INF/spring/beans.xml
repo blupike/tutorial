@@ -26,9 +26,10 @@ http://cxf.apache.org/jaxrs
 			http://cxf.apache.org/schemas/jaxrs.xsd
  -->
 <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:osgi="http://www.springframework.org/schema/osgi"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:jaxws="http://cxf.apache.org/jaxws"
-		xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
 	xsi:schemaLocation="
 		http://www.springframework.org/schema/beans 
 		http://www.springframework.org/schema/beans/spring-beans.xsd
@@ -36,9 +37,14 @@ http://cxf.apache.org/jaxrs
 		http://cxf.apache.org/schemas/jaxws.xsd
 		http://www.springframework.org/schema/osgi 
 		http://www.springframework.org/schema/osgi/spring-osgi.xsd
-			http://cxf.apache.org/jaxrs
-			http://cxf.apache.org/schemas/jaxrs.xsd
+		http://cxf.apache.org/jaxrs
+		http://cxf.apache.org/schemas/jaxrs.xsd
 		">
+
+<!-- File tutto commentato. Esporre solo servizi OSGi (java-to-java) -->
+
+<osgi:service id="simpleServiceOsgi" ref="simpleService" interface="service.MyServiceI" />
+<bean id="simpleService" class="service.MyServiceImpl" init-method="init"/>
 
 <!-- 
     <import resource="classpath:META-INF/cxf/cxf.xml" />
@@ -46,7 +52,8 @@ http://cxf.apache.org/jaxrs
     <import resource="classpath:META-INF/cxf/cxf-extension-http.xml" />
     <import resource="classpath:META-INF/cxf/osgi/cxf-extension-osgi.xml" />
  -->
- 
+ 	
+ 	<!-- 
 	<jaxws:endpoint id="HTTPEndpoint"
 	    implementor="camel_cxf.adapter.PersonImpl"
 	    address="/PersonService"
@@ -55,30 +62,34 @@ http://cxf.apache.org/jaxrs
 	    serviceName="s:PersonService"
 	    xmlns:e="http://servicemix.apache.org/samples/wsdl-first"
         xmlns:s="http://servicemix.apache.org/samples/wsdl-first"/>
-
+	 -->
+	 
 <!-- 
 	ADEGUAMENTI BASATI SU:
 	https://idodevjobs.wordpress.com/2014/08/30/develop-a-simple-restful-webservices-using-apache-cxf-and-spring-framework/ 
 -->
 	
+	<!-- 
 	 <jaxrs:server id="customerService" address="/customers">
         <jaxrs:serviceBeans>
            <ref bean="serviceBean"/>
         </jaxrs:serviceBeans>
+     -->
         
-        <!-- 
+        <!--  tenere commentato
          <jaxrs:features>
 	        <cxf:logging/>
 	     </jaxrs:features>
 	      -->
-	      
+	 <!--      
 	     <jaxrs:providers>
 	         <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" />
 	     </jaxrs:providers>
 	     
      </jaxrs:server>
      <bean id="serviceBean" class="rest.HelloRestServiceImpl"/> 
-     
+      -->
+      
      <!-- 
      <jaxrs:server id="exampleCxfServer" address="/">
 	     <jaxrs:serviceBeans>

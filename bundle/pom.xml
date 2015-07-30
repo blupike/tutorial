@@ -131,6 +131,12 @@
                             org.apache.servicemix.samples.wsdl_first.types
                         </Private-Package>
                         <Require-Bundle>org.apache.cxf.bundle</Require-Bundle>
+                        
+                        <!-- Accetta sia nome secco che pkg.* -->
+                        <Export-Package>
+							bundle.service
+						</Export-Package>
+						
                         <!--
                         <DynamicImport-Package>*</DynamicImport-Package>
                         -->
